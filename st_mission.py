@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-with open('./auth_config.yml') as file:
+with open('auth_config.yml') as file:
     config = yaml.load(file, Loader=yaml.SafeLoader)
 
 authenticator = stauth.Authenticate(
