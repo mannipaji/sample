@@ -1,0 +1,41 @@
+credentials:
+  usernames:
+    balaji:
+      email: balaji.ext@tmdc.io
+      name: Balaji M
+      password: '$2b$12$AuKO8wLZQhd7ry5s8vbkJOnTesTcMQAPZYo9PMt4dQLznI1ZfMsuC' # Data_4_Lyfe
+    sndatanator:
+      email: stacknexus.partners@tmdc.io
+      name: Stacknexus Partners
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_4_Lyfe
+    neha:
+      email: neha.rahangadale@stacknexus.io
+      name : Neha Rahangadale
+      password: '$2b$12$AuKO8wLZQhd7ry5s8vbkJOnTesTcMQAPZYo9PMt4dQLznI1ZfMsuC' # Data_4_Lyfe
+    rakesh:
+      email: rakesh.vishvakarma@tmdc.io
+      name: Rakesh Vishvakarma
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_is_Lyfe
+    ravindra:
+      email: ravindra.khudania@tmdc.io
+      name: Ravindra Khudania
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_is_Lyfe
+    aravind: 
+      email: aravind@tmdc.io
+      name: Aravind Nunsavathu
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_is_Lyfe
+    vishal:
+      email: vishal@tmdc.io
+      name: Vishal Venkatram
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_is_Lyfe
+    yogesh:
+      email: yogesh.khangode@tmdc.io
+      name: Yogesh Khangode
+      password: '$2b$12$ESL0ZTg6JTJK55xPhQpO..Tts0YlgFCPscfG33STTTiv3qLBlySDm' # Data_is_Lyfe
+cookie: 
+  expiry_days: 30
+  key: st_dataos_key
+  name: st_dataos_cookie
+preauthorized:
+  emails:
+  - aravind@tmdc.io
