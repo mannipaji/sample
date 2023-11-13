@@ -1,0 +1,37 @@
+version: v1
+name: wf-customer-profile
+type: workflow
+tags:
+  - demo.customer
+workflow:
+  title: Customer Profile Dataset
+  dag:
+  - name: customer-profile
+    title: Customer Profile Dataset
+    description: The job performs profiling on the customer data
+    spec:
+      stack: flare:4.0
+      compute: runnable-default
+      title: Customer Profile Dataset
+      persistentVolume:
+        name: persistent-v
+        directory: fides
+      flare:
+        driver:
+          coreLimit: 1100m
+          cores: 1
+          memory: 1048m
+        executor:
+          coreLimit: 1200m
+          cores: 1
+          instances: 1
+          memory: 1000m 
+        job:
+          explain: true
+          inputs:
+            - name: customer
+              dataset:  dataos://icebase:retail_accelerator/customer
+              format: iceberg         
+          logLevel: INFO
+          profile:
+            level: basic

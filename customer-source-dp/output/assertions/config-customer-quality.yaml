@@ -1,0 +1,54 @@
+version: v1
+name: wf-customer-quality
+type: workflow
+tags:
+  - demo.customer
+description: The job performs metrics calculations and checks on customer data
+workflow:
+  title: Customer quality Dataset
+  dag:
+    - name: customer-quality
+      title: 
+      description: The job performs metrics calculations and checks on customer data
+      spec:
+        stack: flare:4.0
+        compute: runnable-default
+        tags:
+          - customer
+        title: Customer quality Dataset
+        description: The job performs metrics calculations and checks on customer data
+        flare:
+          job:
+            explain: true
+            logLevel: INFO
+            inputs:
+              - name: source
+                dataset:  dataos://icebase:retail_accelerator/customer
+                format: iceberg
+
+            assertions:
+              - column: customer_id
+                tests:
+                  - duplicate_count == 0
+                  - missing_count <= 0
+
+              - column: email_id
+                validFormat:
+                  regex: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+                tests:
+                  - duplicate_count == 0
+                   - missing_count <= 0
+
+              - column: marital_status
+                validFomat:
+                  regex: \b(?:Married|Separated|Other|Widowed|Unknown|Divorced|Single)\b
+                tests: 
+                  - missing_count <= 0
+
+              - column: zip_code
+                validFormat:
+                  regex: ^\d{5}$
+                tests:
+                  - missing_count <= 0
+                  - min > 10000
+                  - max < 99993

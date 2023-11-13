@@ -1,0 +1,49 @@
+version: v1
+name: wf-customer-data
+type: workflow
+tags:
+  - demo.customer
+description: The job ingests retail customer data from bigquery to icebase.
+workflow:
+  title:  Retail Customer Data
+  dag:
+    - name: retail-customer-data
+      title: Retail Customer Dataset
+      spec:
+        tags:
+          - demo.customer
+        stack: flare:4.0
+        compute: runnable-default
+        flare:
+          driver:
+            coreLimit: 1100m
+            cores: 1
+            memory: 1048m
+          executor:
+            coreLimit: 1200m
+            cores: 1
+            instances: 1
+            memory: 1000m 
+          job:
+            explain: true
+
+            inputs:
+              - name: customer
+                dataset: dataos://bigquery:retail_accelerator/customers?acl=rw    
+                            
+            logLevel: INFO
+            steps:
+              - transformation/steps/steps.yaml
+            outputs:
+              - name: final
+                dataset: dataos://icebase:retail_accelerator/customer?acl=rw
+                format: Iceberg
+                description: This dataset gives you details of all customer activity and corresponding features
+                tags:
+                  - demo.customer
+                options:
+                  saveMode: overwrite
+                  iceberg:                           
+                    properties:
+                      write.format.default: parquet
+                      write.metadata.compression-codec: snappy

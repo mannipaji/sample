@@ -1,0 +1,16 @@
+sequence:
+  - name: final
+    doc: Selecting all columns from Transaction Overview
+    sqlFile: transformation/steps/customer.sql
+    functions:
+      - name: cleanse_column_names
+      - name: change_column_case
+        case: lower
+
+      - name: any_timestamp
+        column: birth_date
+        asColumn: birth_date
+
+      - name: any_timestamp
+        column: register_date
+        asColumn: register_date
