@@ -236,37 +236,37 @@
         }
     },
     {
-        "claimNumber": "C10008",
-        "firstName": "Christopher",
-        "lastName": "Hartman",
-        "incidentDate": "2009-02-03",
-        "claimDate": "2009-02-07",
+        "claimNumber": "C10033",
+        "firstName": "Kirsten",
+        "lastName": "Gonzalez",
+        "incidentDate": "2017-02-26",
+        "claimDate": "2017-02-28",
         "accessorNotes": "",
         "dataOS": {
             "suggest": "Reject",
-            "confidence": 25.0,
-            "llmReasoning": "The model assigned a relatively low confidence score of 25.001604 due to the combination of several factors. Despite the amount claimed being significantly less than the max coverage amount, the claim was not paid which could be due to the lack of identified damage type. Furthermore, the policyholder has a clean record with no prior claims or accidents in the last 5 years, and no motoring offenses, which might typically lead to a higher confidence score. The high annual mileage estimate may also factor into the lower confidence score as it increases the risk of potential accidents.",
-            "additionalNote": "Insufficient information in the claim report."
+            "confidence": 48.54,
+            "llmReasoning": "The model assigned a confidence score of 48.546566 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
+            "additionalNote": "The claim meets all policy terms and conditions for settlement."
         },
-        "postal_code": "G1 1AA",
+        "postal_code": "BS1 1AA",
         "full_details": {
-            "claimNumber": "C10008",
-            "firstName": "Christopher",
-            "lastName": "Hartman",
-            "incidentDate": "2009-02-03",
-            "claimDate": "2009-02-07",
+            "claimNumber": "C10033",
+            "firstName": "Kirsten",
+            "lastName": "Gonzalez",
+            "incidentDate": "2017-02-26",
+            "claimDate": "2017-02-28",
             "accessorNotes": "",
-            "vehicle_registration_number": "UC32-KNW",
-            "policy_id": "MPI1000369",
+            "vehicle_registration_number": "TL18-YXW",
+            "policy_id": "MPI1000714",
             "policy_issue_date": "2001-06-15",
             "dataOS": {
                 "suggest": "Reject",
-                "confidence": 25.0,
-                "llmReasoning": "The model assigned a relatively low confidence score of 25.001604 due to the combination of several factors. Despite the amount claimed being significantly less than the max coverage amount, the claim was not paid which could be due to the lack of identified damage type. Furthermore, the policyholder has a clean record with no prior claims or accidents in the last 5 years, and no motoring offenses, which might typically lead to a higher confidence score. The high annual mileage estimate may also factor into the lower confidence score as it increases the risk of potential accidents.",
-                "additionalNote": "Insufficient information in the claim report."
+                "confidence": 88.54,
+                "llmReasoning": "The model assigned a confidence score of 48.546566 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
+                "additionalNote": "The claim meets all policy terms and conditions for settlement."
             },
-            "postal_code": "G1 1AA",
-            "driving_licence_number": "DL-LG-97129254"
+            "postal_code": "BS1 1AA",
+            "driving_licence_number": "DL-YN-91061705"
         }
     },
     {
@@ -1079,40 +1079,6 @@
             },
             "postal_code": "CF10 1AA",
             "driving_licence_number": "DL-QB-31351625"
-        }
-    },
-    {
-        "claimNumber": "C10033",
-        "firstName": "Kirsten",
-        "lastName": "Gonzalez",
-        "incidentDate": "2017-02-26",
-        "claimDate": "2017-02-28",
-        "accessorNotes": "",
-        "dataOS": {
-            "suggest": "Reject",
-            "confidence": 48.54,
-            "llmReasoning": "The model assigned a confidence score of 48.546566 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
-            "additionalNote": "The claim meets all policy terms and conditions for settlement."
-        },
-        "postal_code": "BS1 1AA",
-        "full_details": {
-            "claimNumber": "C10033",
-            "firstName": "Kirsten",
-            "lastName": "Gonzalez",
-            "incidentDate": "2017-02-26",
-            "claimDate": "2017-02-28",
-            "accessorNotes": "",
-            "vehicle_registration_number": "TL18-YXW",
-            "policy_id": "MPI1000714",
-            "policy_issue_date": "2001-06-15",
-            "dataOS": {
-                "suggest": "Reject",
-                "confidence": 48.54,
-                "llmReasoning": "The model assigned a confidence score of 48.546566 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
-                "additionalNote": "The claim meets all policy terms and conditions for settlement."
-            },
-            "postal_code": "BS1 1AA",
-            "driving_licence_number": "DL-YN-91061705"
         }
     },
     {
