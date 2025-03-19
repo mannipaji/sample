@@ -8,7 +8,7 @@
         "accessorNotes": "",
         "dataOS": {
             "suggest": "Accept",
-            "confidence": 95,
+            "confidence": 97,
             "llmReasoning": "The model assigned a confidence score of 95 due to several factors. The amount claimed exceeds the maximum coverage amount, which could indicate a potential discrepancy. Additionally, the insured has a history of motoring offenses and accidents in the past 5 years, which increases the risk profile. The absence of prior claims might have slightly mitigated the score. The damage type is not applicable here as the claim is for theft.",
             "additionalNote": "The claim meets all policy terms and conditions for settlement."
         },
@@ -246,7 +246,7 @@
             "suggest": "Reject",
             "confidence": 88.54,
             "llmReasoning": "The model assigned a confidence score of 88.54 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
-            "additionalNote": "The claim meets all policy terms and conditions for settlement."
+            "additionalNote": "The claim meets all policy terms and conditions for rejection."
         },
         "postal_code": "BS1 1AA",
         "full_details": {
@@ -263,7 +263,7 @@
                 "suggest": "Reject",
                 "confidence": 88.54,
                 "llmReasoning": "The model assigned a confidence score of 88.54 likely due to a combination of factors. The claim amount is well within the maximum coverage amount which is a positive factor, but the claimant has a record of prior claims and motoring offences in the last five years, which could increase the risk perception. The high annual mileage estimate might also contribute to the lower confidence score. Additionally, the damage type being listed as \"Not Applicable\" for a damage claim could have created an ambiguity that the model may have struggled with.",
-                "additionalNote": "The claim meets all policy terms and conditions for settlement."
+                "additionalNote": "The claim meets all policy terms and conditions for rejection."
             },
             "postal_code": "BS1 1AA",
             "driving_licence_number": "DL-YN-91061705"
