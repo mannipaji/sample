@@ -8,7 +8,7 @@
         "accessorNotes": "",
         "dataOS": {
             "suggest": "Accept",
-            "confidence": 97,
+            "confidence": 95,
             "llmReasoning": "The model assigned a confidence score of 95 due to several factors. The amount claimed exceeds the maximum coverage amount, which could indicate a potential discrepancy. Additionally, the insured has a history of motoring offenses and accidents in the past 5 years, which increases the risk profile. The absence of prior claims might have slightly mitigated the score. The damage type is not applicable here as the claim is for theft.",
             "additionalNote": "The claim meets all policy terms and conditions for settlement."
         },
@@ -44,7 +44,7 @@
             "suggest": "Reject",
             "confidence": 10.0,
             "llmReasoning": "The model's confidence score appears to be based on several factors. Firstly, the claim amount exceeds the maximum coverage amount, which might signal potential fraud or a mistake. Secondly, there are no prior claims, accidents, or motoring offenses in the last five years, which suggests the policyholder has a good driving record. The unspecified damage type could also be a factor contributing to scepticism. However, the high annual mileage estimate might increase the likelihood of damage, countering the otherwise low-risk profile. The zero amount paid suggests the claim was denied, possibly due to the claim exceeding coverage, which might also impact the confidence score.",
-            "additionalNote": "Damage caused by uncovered perils: If the policyholder's claim is due to an event that is not covered under their policy, it may be rejected."
+            "additionalNote": "Damage caused by uncovered perils: If As the policyholder's claim is due to an event that is not covered under their policy, it should be rejected."
         },
         "postal_code": "NG1 1AA",
         "full_details": {
@@ -61,7 +61,7 @@
                 "suggest": "Reject",
                 "confidence": 10.0,
                 "llmReasoning": "The model's confidence score appears to be based on several factors. Firstly, the claim amount exceeds the maximum coverage amount, which might signal potential fraud or a mistake. Secondly, there are no prior claims, accidents, or motoring offenses in the last five years, which suggests the policyholder has a good driving record. The unspecified damage type could also be a factor contributing to scepticism. However, the high annual mileage estimate might increase the likelihood of damage, countering the otherwise low-risk profile. The zero amount paid suggests the claim was denied, possibly due to the claim exceeding coverage, which might also impact the confidence score.",
-                "additionalNote": "Damage caused by uncovered perils: If the policyholder's claim is due to an event that is not covered under their policy, it may be rejected."
+                "additionalNote": "Damage caused by uncovered perils: If As the policyholder's claim is due to an event that is not covered under their policy, it should be rejected."
             },
             "postal_code": "NG1 1AA",
             "driving_licence_number": "DL-DA-14974723"
